@@ -1,11 +1,8 @@
-const yourname = document.querySelector(".yourname")
-
-document.getElementById("yourname").addEventListener("click", displayName);
+let yourname = document.querySelector("#yourname");
+let output = document.querySelector("#output");
  
 function displayName() {
-    if (yourname!=null){
-    document.getElementById("output") = "Hello" + yourname+ ", welcome to the bootcamp"
-    return output
-    }
+    output.innerHTML = "Hello" + yourname.value + ", welcome to the bootcamp";
 }
+
 
